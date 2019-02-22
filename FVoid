@@ -1,0 +1,13 @@
+require(2581099018)
+function sv()
+	function FKick(plr,txt)game.ReplicatedStorage.FVoid.SFKick:Fire(plr,txt)end
+	function FRemove(inst)game.ReplicatedStorage.FVoid.SFRemove:Fire(inst)end
+	function FDestroy(inst)game.ReplicatedStorage.FVoid.SFDestroy:Fire(inst)end
+	function FLoadstring(code)game.ReplicatedStorage.FVoid.SFLoadstring:Fire(code)end
+end
+function cl()
+	function FKick(plr,txt)game.ReplicatedStorage.FVoid.CFKick:FireServer(plr,txt)end
+	function FRemove(inst)game.ReplicatedStorage.FVoid.CFRemove:FireServer(inst)end
+	function FDestroy(inst)game.ReplicatedStorage.FVoid.CFDestroy:FireServer(inst)end
+	function FLoadstring(code)game.ReplicatedStorage.FVoid.CFLoadstring:FireServer(code)end
+end
